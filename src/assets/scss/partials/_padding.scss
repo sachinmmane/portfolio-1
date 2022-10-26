@@ -1,0 +1,90 @@
+/* 
+  * Created By: Ramu Kumar Vishwakarma
+  * Created At: 09-02-2022
+  * Desc : padding SCSS
+  * Function : padding-top padding-bottom padding-left padding-right
+  * 
+*/
+// padding-top
+.ptn, .pvn, .pan {
+  padding-top: 0 !important;
+}
+.ptx, .pvx, .pax {
+  padding-top: $space-x-small;
+}
+.pts, .pvs, .pas {
+  padding-top: $space-small;
+}
+.ptm, .pvm, .pam {
+  padding-top: $space-medium;
+}
+.ptl, .pvl, .pal {
+  padding-top: $space-large;
+}
+
+// padding-bottom
+.pbn, .pvn, .pan {
+    padding-bottom: 0;
+}
+.pbx, .pvx, .pax {
+    padding-bottom: $space-x-small;
+}
+.pbs, .pvs, .pas {
+    padding-bottom: $space-small;
+}
+.pbm, .pvm, .pam {
+    padding-bottom: $space-medium;
+}
+.pbl, .pvl, .pal {
+    padding-bottom: $space-large;
+}
+
+// padding-right
+.prn, .phn, .pan {
+  padding-right: 0;
+}
+.prx, .phx, .pax {
+  padding-right: $space-x-small;
+}
+.prs, .phs, .pas {
+  padding-right: $space-small;
+}
+.prm, .phm, .pam {
+  padding-right: $space-medium;
+}
+.prl, .phl, .pal {
+  padding-right: $space-large;
+}
+
+// padding-left
+.pln, .phn, .pan {
+  padding-left: 0;
+}
+.plx, .phx, .pax {
+  padding-left: $space-x-small;
+}
+.pls, .phs, .pas {
+  padding-left: $space-small;
+}
+.plm, .phm, .pam{
+  padding-left: $space-medium !important;
+}
+.pll, .phl, .pal{
+  padding-left: $space-large !important;
+}
+.p-24{  padding: 24px !important;}
+.pl-24{  padding-left: 24px !important;}
+.pr-24{  padding-right: 24px !important;}
+.pt-24{  padding-top: 24px !important;}
+.pb-24{  padding-bottom: 24px !important;}
+.p-30{  padding: 30px !important;}
+.pl-30{  padding-left: 30px !important;}
+.pr-30{  padding-right: 30px !important;}
+.pt-30{  padding-top: 30px !important;}
+.pb-30{  padding-bottom: 30px !important;}
+.p-40{  padding: 40px !important;}
+.pl-40{  padding-left: 40px !important;}
+.pr-40{  padding-right: 40px !important;}
+.pt-40{  padding-top: 40px !important;}
+.pb-40{  padding-bottom: 40px !important;}
+.pl-68{  padding-left: 68px !important;}

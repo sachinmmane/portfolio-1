@@ -1,4 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+.wrapper-1140 {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0px 15px;
+    margin: 0 auto;    
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Mixins File
+@import './assets/scss/mixins/blockSize';
+
+
+// Partials File
+@import './assets/scss/partials/vars',
+'./assets/scss/partials/utility',
+'./assets/scss/partials/header',
+'./assets/scss/partials/dialogs',
+'./assets/scss/partials/global',
+'./assets/scss/partials/tabs',
+'./assets/scss/partials/table',
+'./assets/scss/partials/form',
+'./assets/scss/partials/padding',
+'./assets/scss/partials/margin';

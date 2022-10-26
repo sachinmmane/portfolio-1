@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 0;
+    * {
+        color: $midnight;
+    }
+}
+
+// .mat-toolbar-row, .mat-toolbar-single-row {
+//     padding: 20px 0 !important;
+// }
+
+.mat-toolbar {
+    background-color: transparent;
+}
+
+.mat-icon-button { 
+    width: auto !important;
+    padding: 0 10px !important;
+}

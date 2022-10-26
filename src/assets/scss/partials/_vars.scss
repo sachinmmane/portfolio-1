@@ -1,0 +1,184 @@
+// font weight
+$thin:100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$bolder: 800;
+$extra_bold: 900;
+
+$fw-100:100;
+$fw-300:300;
+$fw-400:400;
+$fw-500:500;
+$fw-600:600;
+$fw-700:700;
+$fw-800:800;
+$fw-900:900;
+
+$Inter:'Inter';
+$TTNormsPro: 'TT Norms Pro';
+$height:100vh;
+$width:100%;
+
+
+$left: left;
+$center: center;
+$right: right;
+
+// font size 
+$fs-10: 10px;
+$fs-12: 12px;
+$fs-13: 13px;
+$fs-14: 14px;
+$fs-15: 15px;
+$fs-16: 16px;
+$fs-17: 17px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-22: 22px;
+$fs-24: 24px;
+$fs-26: 26px;
+$fs-28: 28px;
+$fs-30: 30px;
+$fs-32: 32px;
+$fs-34: 34px;
+$fs-36: 36px;
+$fs-55: 55px;
+
+// font size 
+$heading1: 55px;
+$heading2: 35px;
+$heading3: 20px;
+$heading4: 16px;
+$heading5: 17px;
+$heading6: 20px;
+$paragraph-size: 16px;
+$paragraph-size-lg: 17px;
+$font-size-xxs: 10px;
+$font-size-xs: 12px;
+$font-size-xss: 13px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xlg: 20px;
+$font-size-xl: 22px;
+$font-size-xlx: 24px;
+$font-size-xxl: 28px;
+$font-size-xxlg:30px;
+
+// color
+$midnight: #4f4f4f;  // #0D141F 
+
+
+
+$black:#000000;
+$raven-black: #3E3E3E;
+$bluewood: #2E3B52;
+$mid-black: #31363E;
+$pitch: #343434;
+$white:#FFFFFF;
+$ghost-white:#F8F9FD;
+$Gainsboro:#DFDFDF;
+$harmonies: #778497;
+$pearl:#EAEAEA;
+$frost:#DEDCDC;
+$silver: #B9B9B9;
+$chiffon:#F9F9F9;
+$white-100: #F4F5FF;
+$white-200:#EFF2FF;
+$white-300: #FCFDFE;
+$primary_color: #6265F2;
+$blue: #0A65FF;
+$alice-blue:#F0F5F9;  // #F0F0F0
+$navy-blue: #6366F2;
+$sky-blue: #0096E3;
+$dark-blue: #006DF9;
+$blueberry :#4cc2ff;
+$zircon: #EFF0FF;
+$pattens-blue: #E0E5E9;
+$light-blue: #F8F9FC;
+$light-violet: #C4C5FC;
+$eb_bg: #0054A5;
+$grey: #828282;
+$dim-grey:#616161; 
+$lighter-grey:#E5E5E5;
+$cloud-grey:#F6F8FA;
+$mercury:#E8E8E8;
+$dolphin-grey: #C3C3C3;
+$grey-500:#808B96;
+$cool-grey:#B9BDC1;
+$dark-grey:#A4A4A4;
+$pencil: #606F89;
+$vulcan: #333943;
+$yellow: #FFC90A;
+$canary-yellow: #F7B84E;
+$dark-yellow:#C49900;
+$dark-red: #FF0A0A;
+$red: #CD0000;
+$cherry-red: #D70000;
+$danger:#AA1212;
+$orange:#f44336;
+$bright-red:#FF5C33;
+$green: #219653;
+$strong-cyan: #15CBA2;
+$whisper: #ECECEC;
+$light-grey: #d1d1d1;
+$oslo-grey:#85868A;
+$snow-white:#FAFAFA;
+$gainsboro:#E2E2E2;
+$white-smoke:#F1F1F1;
+$fair-pink:#FFE9E9;
+$goldenrod:#D1A918;
+
+$bright-grey:#515457;
+$lime: #01B46A;
+$patina-green:#B0F0D7;
+$blue-ribbon:#0062FF;
+$cyan-blue:#EFF5FF;
+$athens-grey:#f1f1f2;
+$pale-orange:#FFFBEB;
+$pale-blue:#EBF2FF; // #EBEBEB
+$pale-red:#FFF3F3;
+$alice-blue:#EFFBF6;
+$vivid-amber :#C59900;
+$tints-blue:#C7D4EA;
+$solitude: #DDEAFF;
+
+// margin and padding Settings
+$space-xx-small: 1px;
+$space-x-small:  3px;
+$space-small:    5px;
+$space-medium:   10px;
+$space-sm-medium:14px;
+$space-md-medium:16px;
+$space-large:    20px;
+
+// negative margin and padding Settings
+$negative-xx-small: -1px;
+$negative-x-small:  -3px;
+$negative-small:    -5px;
+$negative-medium:   -10px;
+$negative-sm-medium:-14px;
+$negative-md-medium:-16px;
+$negative-large:    -20px;
+
+// media aliases and breakpoints
+$screen-xs-min: 280px;
+$screen-sm-min: 424px;
+$screen-md-min: 768px;
+$screen-lg-min: 1023px;
+$screen-xl-min: 1420px;
+
+$screen-xs-max: 520px;
+$screen-sm-max: 768px;
+$screen-md-max: 1024px;
+$screen-lg-max: 1338px;
+$screen-xl-max: 2560px;
+
+// media devices breakpoints
+$desktop: 1280px;
+$laptop: 1024px;
+$tablets: 768px;
+$mobile: 480px;

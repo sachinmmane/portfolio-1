@@ -1,0 +1,288 @@
+ .mat-form-field{
+    width: 100%;
+  } 
+
+
+mat-label{
+  font-size: $font-size-sm;
+  font-family: $TTNormsPro;
+  font-weight: $fw-400;
+  color: $harmonies;
+  line-height: 18px;
+  &.tel-label{
+    margin-bottom: 10px;
+  }
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 6px;
+  padding-bottom: 10px;
+  font-size: $font-size-xss;
+  line-height: 20px;
+}
+.mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+  transform: translateY(-8%) !important;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline-end {
+  border: 1.5px solid $pattens-blue;
+  background-color: $white-300;
+}
+.mat-form-field-appearance-outline .mat-form-field-prefix {
+  top: 2px !important;
+}
+.mat-drawer-side{
+  .mat-form-field-appearance-outline .mat-form-field-suffix {
+    top: 0 !important;
+  }
+}
+.mat-form-field-appearance-outline .mat-form-field-outline-start {
+  border: 1.5px solid $pattens-blue;
+  background-color: $white-300;
+}
+
+.currency-icon{
+  mat-icon{
+      position: relative;
+      top: 3px;
+      font-size: 18px !important;
+  }
+}
+.mat-form-field-appearance-outline .mat-form-field-suffix {
+  p{
+    position: relative !important;
+    top: -4px !important;
+  }
+}
+.is-invalid {
+  display: block;
+  border-radius: 5px;  
+  height: 44px;
+  border: solid 2px #f44336 !important;
+  outline: none !important;
+}
+.btn-ribbon{
+  background: $blue-ribbon;
+  box-shadow: 0px 6px 11px rgba(8, 58, 103, 0.13);
+  border-radius: 12px !important;
+  font-family: $TTNormsPro;
+  font-style: normal;
+  font-weight: $semibold;
+  font-size: $font-size-sm;
+  line-height: 20px;
+  padding: 2px 62px !important;
+  border: 1px solid $blue-ribbon !important;
+  color: $white;
+}
+
+// Custom radio
+.custom-radio {
+  position: relative;
+  input[type=radio] {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 25px;
+      left: 20px;
+  }
+  input[type=radio]+label {
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: solid 1px $light-grey !important;
+      margin: 0px;
+      cursor: pointer;
+  }
+  input[type=radio].input-invalid+label {
+      border-color: $danger  !important;
+      // background-color: $pale_pink;
+  }
+  input[type=radio]:checked+label {
+      box-shadow: 0px 0px 0px 0.5px $blue-ribbon;
+      background: #DEEBFF;
+      border: 1px solid $blue-ribbon!important;
+      color: $blue-ribbon;
+  }
+
+  .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 3px 6px 6px 6px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+    .mat-form-field-wrapper {
+      padding-bottom: 0 !important;
+  }
+
+}
+#mat-select-22-panel{
+  min-width: calc(100% + 31px) !important;
+  transform: scaleY(1);
+  position: relative;
+  left: 25px;
+  .mat-option {
+    font-size: inherit;
+    line-height: 3em;
+    height: 3.7em !important;
+  }
+}
+.multiple-select{
+  .mat-chip.mat-standard-chip {
+    color: #515457;
+    background: #F0F5F9;
+    border: 1px solid #E0E5E9;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+.mat-radio{
+  .mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color: transparent;
+  }
+  .mat-radio-container,
+  .mat-radio-outer-circle,
+  .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    display: none;
+  }
+  
+  span.mat-radio-container {
+    display: none;
+  }
+  
+  .mat-radio-checked{
+    box-shadow: 0px 0px 0px 0.5px $blue-ribbon;
+    background: #DEEBFF;
+    border: 1px solid $blue-ribbon!important;
+    color: $blue-ribbon;
+    position: relative;
+      border-radius: 6px;
+  }
+  .mat-radio-group{
+    .mat-radio-button {
+      transition: border-color ease 280ms;
+      border-radius: 8px !important;
+      border: solid 1px #d1d1d1 !important;
+      -webkit-user-select: auto;
+      user-select: auto;
+      display: flex;
+      width: fit-content;
+      text-align: center;
+      font-family: 'TT Norms Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      outline: 0;
+      margin-bottom: 12px;
+    }
+    .rating-inline {
+      display: inline-block;
+    }
+    .mat-radio-label-content {
+      padding : 7px 15px !important; 
+    }
+  }
+  .mat-form-field {
+    display: inline-block;
+    position: absolute;
+    text-align: left;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: -14px;
+    &.form-field{
+      margin-left: 40px;
+      margin-top: -13px;
+    }
+  }
+  .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 3px 6px 6px 6px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+    .mat-form-field-wrapper {
+      padding-bottom: 0 !important;
+  }
+}
+
+.mat-radio-label {
+  justify-content: center;
+  // &:hover{
+  //   border-radius: 8px !important;
+  //   box-shadow: 0px 0px 0px 0.5px $blue-ribbon;
+  //   background: #DEEBFF;
+  //   color: $blue-ribbon!important;
+  // }
+}
+.ql-container{
+  background: #FCFDFE;
+}
+
+.mat-radio-label-content {
+  padding-left: unset !important;
+}
+.mat-radio-btn{
+  .mat-radio-group{
+    .mat-radio-button{      
+      border-radius: 8px !important;
+      border: solid 1px #d1d1d1 !important;
+      padding: 7px 15px;
+      display: flex;
+      width: fit-content;
+      margin-bottom: 16px;
+    }
+  }
+}
+.star-rating{
+  .mat-icon-button{
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: solid 1px #B4B4B4 !important;
+    margin-right: 12px;
+    cursor: pointer;
+      span.mat-button-wrapper {
+        position: relative;
+        top: -6px;
+        font-family: 'TT Norms Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1C2833;
+      }
+      &.cdk-focused{
+        box-shadow: 0px 0px 0px 0.5px $blue-ribbon;
+        background: #DEEBFF;
+        border: 1px solid $blue-ribbon!important;
+        color: $blue-ribbon;
+      }
+  }
+}
+.rating-stars {
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+  svg {
+      width: 22px;
+      fill: #EAEAEA;
+      cursor: pointer;
+      margin-right: 5px;
+  }
+  .star-cover {
+      background: #024a2c;
+      // background: linear-gradient(90deg, #024a2c 25%, #024a2c 30.9%, #EAEAEA 50%);;
+      height: 100%;
+      overflow: hidden;
+      mix-blend-mode: color-burn;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+}
+.skills_check{
+  padding: 7px 20px 10px 18px;
+  img{
+      position: relative;
+      top: 4px;
+      right: 4px;
+  }
+}

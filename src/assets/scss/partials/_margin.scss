@@ -1,0 +1,149 @@
+/* 
+  * Created By: Ramu Kumar Vishwakarma
+  * Created At: 09-02-2022
+  * Desc : margin positive and negative SCSS
+  * Function : margin-top margin-bottom margin-left margin-right
+  * 
+*/
+// margin-top
+.mtn, .mvn, .man{
+  margin-top: 0px !important;
+}
+.mtx, .mvx, .max{
+  margin-top: $space-x-small;
+}
+.mts, .mvs, .mas{
+  margin-top: $space-small;
+}
+.mtm, .mvm, .mam{
+  margin-top: $space-medium;
+}
+.mtl, .mvl, .mal{
+  margin-top: $space-large;
+}
+
+// margin-bottom
+.mbn, .mvn, .man {
+  margin-bottom: 0;
+}
+.mbx, .mvx, .max {
+  margin-bottom: $space-x-small;
+}
+.mbs, .mvs, .mas {
+  margin-bottom: $space-small;
+}
+.mbm, .mvm, .mam {
+  margin-bottom: $space-medium;
+}
+.mbl, .mvl, .mal {
+  margin-bottom: $space-large;
+}
+
+// margin-right
+.mrn, .mhn, .man{
+  margin-right: 0;
+}
+.mrx, .mhx, .max{
+  margin-right: $space-x-small;
+}
+.mrs, .mhs, .mas{
+  margin-right: $space-small;
+}
+.mrm, .mhm, .mam{
+  margin-right: $space-medium;
+}
+.mrl, .mhl, .mal{
+  margin-right: $space-large;
+}
+
+// margin-left
+.mln, .mhn, .man {
+  margin-left: 0;
+}
+.mlx, .mhx, .max {
+  margin-left: $space-x-small;
+}
+.mls, .mhs, .mas {
+  margin-left: $space-small;
+}
+.mlm, .mhm, .mam{
+  margin-left: $space-medium;
+}
+.mll, .mhl, .mal{
+  margin-left: $space-large;
+}
+
+
+// negative margin
+
+// margin-top
+.m-tn, .m-vn, .m-an{
+  margin-top: 0px !important;
+}
+.m-tx, .m-vx, .m-ax{
+  margin-top: $negative-x-small !important;
+}
+.m-ts, .m-vs, .m-as{
+  margin-top: $negative-small !important;
+}
+.m-tm, .m-vm, .m-am{
+  margin-top: $negative-medium !important;
+}
+.m-tl, .m-vl, .m-al{
+  margin-top: $negative-large !important;
+}
+
+// margin-bottom
+.m-bn, .m-vn, .m-an {
+  margin-bottom: 0;
+}
+.m-bx, .m-vx, .m-ax {
+  margin-bottom: $negative-x-small !important;
+}
+.m-bs, .m-vs, .m-as {
+  margin-bottom: $negative-small !important;
+}
+.m-bm, .m-vm, .m-am {
+  margin-bottom: $negative-medium !important;
+}
+.m-bl, .m-vl, .m-al {
+  margin-bottom: $negative-large !important;
+}
+
+// margin-right
+.m-rn, .m-hn, .m-an{
+  margin-right: 0;
+}
+.m-rx, .m-hx, .m-ax{
+  margin-right: $negative-x-small !important;
+}
+.m-rs, .m-hs, .m-as{
+  margin-right: $negative-small !important;
+}
+.m-rm, .m-hm, .m-am{
+  margin-right: $negative-medium !important;
+}
+.m-rl, .m-hl, .m-al{
+  margin-right: $negative-large !important;
+}
+
+// margin-left
+.m-ln, .m-hn, .m-an {
+  margin-left: 0;
+}
+.m-lx, .m-hx, .m-ax {
+  margin-left: $negative-x-small !important;
+}
+.m-ls, .m-hs, .m-as {
+  margin-left: $negative-small !important;
+}
+.m-lm, .m-hm, .m-am{
+  margin-left: $negative-medium !important;
+}
+.m-ll, .m-hl, .m-al{
+  margin-left: $negative-large !important;
+}
+
+.mt-40{
+  margin-top: 40px !important;
+}

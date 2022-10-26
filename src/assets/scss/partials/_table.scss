@@ -1,0 +1,912 @@
+table {
+  width: 100%; 
+  tr.mat-row{
+    &.expanded-row{
+      background: #F4F5FF;
+    }
+  }
+  td.mat-cell.mat-column-expandedDetail {
+    background: #F4F5FF;
+  }
+  th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+      border-bottom-color: transparent;
+    }
+  .inner-detail {
+    overflow: hidden;
+    display: flex;
+    &.show{
+      display: block;
+    }
+   
+    table{
+      border: none;
+      padding: 0 30px 0 0px;
+      background: #F4F5FF;
+      th.mat-header-cell{
+        font-size: 12px;
+        padding: 0;
+      }      
+      th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+        border-bottom-color: transparent;
+        border-top: 1px solid #E2E2E2;
+      }
+    }
+  }
+}
+.mat-column-expand{
+  width: 50px;
+}
+.mat-table {
+  font-family: $TTNormsPro;
+  font-weight: 500;
+}
+.mat-header-cell {
+  font-family: $TTNormsPro;
+  font-size: 14px;
+  font-weight: 500;
+}
+.mat-cell, .mat-footer-cell{
+  font-weight: 400;
+}
+tr{
+  &.details-row {
+    height: 0 !important; 
+  }
+  &.mat-header-row {
+    height: 56px;
+    background: #F4F5FF;
+    border: 1px solid #E2E2E2;
+  }
+}
+table.mat-table {
+    border-spacing: 0;
+    border: 1px solid #E2E2E2;
+    border-radius: 6px;
+}
+tr.example-element-row:not(.expanded-row):hover {
+    background: #F4F5FF !important;
+}
+.square{
+    position: relative;
+    top: 4px;
+}
+.empty-table {
+    text-align: center;
+    min-height: calc(50vh - 100px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+      padding: 50px 0;
+      max-width: 400px;
+      margin: 0 auto;
+      img {
+        margin-bottom: 12px;
+      }
+      h6 {
+        color: $midnight;
+        font-family: $TTNormsPro;
+        line-height: 27px;
+        margin-bottom: 5px;
+        font-weight: $bold;
+        font-size: $font-size-xl;
+        margin-top: 0;
+      }
+    }
+  }
+th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+    padding-left: 18px !important;
+}
+th.mat-header-cell:last-of-type, td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type {
+    padding-right: 0px !important;
+}
+// client list
+.expandedClientDetails {
+  padding-left: 2rem;
+    width: 100%;
+  .ClientDetails{
+    display: flex;
+    border-top:  1px solid #EAEAEA;
+    margin-right: 1.5rem;
+    padding-left: 2rem;
+    p {
+      font-family: $TTNormsPro;
+      font-style: normal;
+      font-weight: $fw-400;
+      font-size: $font-size-xs;
+      line-height: 20px;
+      color: $pencil;
+      width: 25%;
+        span {
+          display: block;
+          line-height: 20px;
+          font-style: normal;
+          font-weight: $fw-500;
+          font-size: $font-size-xss;
+          color: $black;
+        }
+    }
+  }
+}
+.experienced {
+  display: flex;
+  p {
+    margin: 35px 30px 0px 0px;
+    font-family: $TTNormsPro;
+    font-style: normal;
+    font-weight: $fw-400;
+    font-size: $fs-14;
+    line-height: 20px;
+    color: $pencil;
+      span {
+        display: block;
+        line-height: 22px;
+        font-style: normal;
+        font-weight: $fw-500;
+        font-size: $fs-18;
+        color: $black;
+      }
+  }
+}
+.projectDetails {
+  display: flex;
+  p {
+    width: 25%;
+    margin: 0px;
+    font-family: $TTNormsPro;
+    font-style: normal;
+    font-weight: $fw-400;
+    font-size: $fs-14;
+    line-height: 26px;
+    padding-bottom: 30px;
+    color: $pencil;
+      span {
+        display: block;
+        line-height: 22px;
+        font-style: normal;
+        font-weight: $fw-500;
+        font-size: $fs-18;
+        color: $black;
+      }
+  }
+  &.exp{
+    p{
+      width: 100%;
+      line-height: 24px;
+    }
+  }
+}
+.interview-title{
+  p{
+    font-family: 'TT Norms Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #606F89;
+  }
+  ul{    
+    &.progress {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 0 5px 0 2.4rem;
+      margin: -6px 0 0;
+      list-style: none;
+      border-radius: unset;
+      background: transparent;
+    }
+    .progress__item {
+      position: relative;
+      min-height: 38px;
+      &.round{
+        min-height: 28px;
+      }
+      counter-increment: list;
+      padding-left: 10px;
+      p {
+        font-family: 'TT Norms Pro';
+        font-style: normal;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #040404;
+        &.progress__title{
+          font-family: 'TT Norms Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #1C2833;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: -1.9rem;
+        top: 16px;
+        height: 100%;
+        width: 1px;
+        border-left: 1px solid #D9D9D9;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: -2.21rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 2rem;
+        text-align: center;
+        border: 2px solid #D9D9D9;
+      }
+      //Active
+      &.active {
+        background: transparent;
+        &:after {
+          background: #0062FF;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          left: -1.9rem;
+          top: 16px;
+          height: 100%;
+          width: 1px;
+          border-left: 1px solid #0062FF;
+        }
+      }
+      //Hide border for Last Step
+      &:last-child {
+        &:before {
+          border: none;
+        }
+      }      
+    }
+  }
+}
+.skillsRequired {
+  p {
+    display: block;
+    font-family: $TTNormsPro;
+    font-style: normal;
+    font-weight: $fw-400;
+    font-size: $fs-14;
+    line-height: 20px;
+    color: $pencil;
+  }
+  span {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 16px;
+    margin: 0 10px 20px 0;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid #DBE1EB;
+    border-radius: 9px;
+    display: inline-block;
+  }
+}
+
+.interested {
+  background: rgba(170, 18, 18, 0.08);
+  border: 1px solid $bright-grey;
+  color: $bright-grey;
+  border-radius: 14px;
+  gap: 10px;
+  padding: 5px 20px;
+}
+
+.interview {  // INterview Sheduled-1    //  Open To Offers
+  background: rgba(0, 98, 255, 0.08);
+  border: 1px solid $blue-ribbon;
+  color: $blue-ribbon;
+  border-radius: 14px;
+  gap: 10px;
+  padding: 5px 20px;
+}
+
+.hired {
+  background: rgba(1, 188, 106, 0.08);
+  border: 1px solid $lime;
+  color: $lime;
+  border-radius: 14px;
+  gap: 10px;
+  padding: 5px 20px;
+}
+
+.rejected {   // Rejected   // UnAvailable
+  background: rgba(170, 18, 18, 0.08);
+  border: 1px solid $danger;
+  color: $danger;
+  border-radius: 11px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  gap: 10px;
+  padding: 6px 20px;
+}
+.draft {  // Showed Interest
+  background: rgba(81, 84, 87, 0.08);
+  border: 1px solid #515457;
+  border-radius: 11px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #515457;
+  gap: 10px;
+  padding: 6px 20px;
+}
+
+.profile-completed{        
+  font-family: $Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;  
+  color: $lime;
+  border: 1px solid $lime;
+  border-radius: 11px;
+  padding: 5px 10px;
+  gap: 10px;
+  background: rgba(1, 180, 106, 0.1);
+}
+
+.completed-work-survey{  
+  font-family: $Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;  
+  color: $canary-yellow;
+  border: 1px solid $canary-yellow;
+  border-radius: 11px;
+  padding: 5px 10px;
+  gap: 10px;
+  background: rgba(255, 201, 10, 0.2);
+}
+.shortlisted{      // Shortlisted
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $dark-yellow;
+  background: #FFFBEB;
+  border: 1px solid $dark-yellow;
+  border-radius: 11px;
+  padding: 5px 10px;
+  gap: 10px;
+}
+.skill-test-link-shared {
+  font-family: $Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;  
+  border: 1px solid $blue;
+  color: $blue;
+  border-radius: 11px;
+  padding: 5px 10px;
+  gap: 10px;
+  background: rgba(10, 101, 255, 0.2);
+}
+
+.skill-test-failed {
+  font-family: $Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;  
+  border: 1px solid $danger;
+  color: $danger;
+  border-radius: 11px;
+  padding: 5px 10px;
+  gap: 10px;
+  background: rgba(170, 18, 18, 0.08);
+}
+
+
+.action-button {
+  color: #505FEF;
+}
+// menu 
+.mat-menu-panel {
+    position: relative;
+    right: 2.1rem !important;
+    min-height: 50px !important;
+}
+.mat-menu-item:hover:not([disabled]), .mat-menu-item.cdk-program-focused:not([disabled]), .mat-menu-item.cdk-keyboard-focused:not([disabled]), .mat-menu-item-highlighted:not([disabled]) {
+  background: #EBF2FF !important;
+}
+.mat-menu-content:not(:empty){
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+.mat-menu-item{
+  font-family: $Inter;
+  font-style: normal;
+  height: 35px !important;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px !important;
+  color: #1A212C;
+}
+.job_posted{
+  position: relative;
+  left: 30%;
+  font-family: $TTNormsPro;
+  font-style: normal;
+  font-weight: $regular;
+  font-size: $font-size-xss;
+  line-height: 16px;
+  color: $bluewood;
+}
+// error message
+.mat-form-field-appearance-outline .mat-form-field-subscript-wrapper {
+  padding: 0 !important;
+}
+.child-table{
+  width: 100%;
+  padding: 0;
+  border-top: 1px solid #EAEAEA !important;
+  margin: 0 50px;
+  display: flow-root;
+  tr{
+      padding: 15px 0px;
+      th{
+          font-family: 'TT Norms Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 32px;
+          color: #606F89;
+          text-align: left;
+          padding: 10px 0px 0 0;
+          width: 10%;
+      }
+      td{
+          font-family: 'TT Norms Pro';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 10px;
+          color: #2E3B52;
+          padding: 0 0px 18px 0;
+          width: 10%;
+      }
+  }
+}
+.sub-child-table{
+  width: 100%;
+  padding: 0;
+  border-top: 1px solid #EAEAEA !important;
+  margin: 0 28px;
+  // display: grid;
+  tr{
+      td{
+        display: inline-block;
+        font-family: 'TT Norms Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 10px;
+        color: #2E3B52;    
+        width: 28%;
+        padding-bottom: 20px;
+        vertical-align: top;
+        &.m-width{
+          width: 18%;
+        }
+        &.i-width{
+          width: 14%;
+        }
+        &.s-width{
+          width: 10%;
+        }
+        &.title{
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 32px;
+          color: #606F89;
+          text-align: left; 
+          padding: 0px;  
+        }
+      }
+  }
+}
+.schedule-details{
+  background: $white;
+  display: grid;
+  width: 100%;
+  margin: 0 40px 24px 32px;
+  padding: 15px 15px 0 15px;
+  border-radius: 4px;
+  h3{
+    font-family: 'TT Norms Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E3B52;
+    span{
+      float: right;
+    }
+  }
+  .details{
+    display: flex;
+    p{
+      // padding: 0 44px 0 0;
+      width: 150px;
+      font-family: 'TT Norms Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #606F89;
+      span{
+        display: block;
+        font-family: 'TT Norms Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #2E3B52;
+        padding-top: 6px;
+      }
+    }
+  }
+}
+
+// Individual Developer Vetted
+.individualDevVetted{
+  th{
+    &.mat-column-vettedOn,
+    &.mat-column-salaryMonth,
+    &.mat-column-statusUpdated,
+    &.mat-column-experience{
+      text-align: center;
+    }
+  }
+  td{
+    &.mat-column-select{
+      .square {
+        position: relative;
+        top: 6px;
+      }
+    }
+    &.mat-column-primarySkills {
+      width: 125px;
+      padding-right: 10px;
+    }
+    &.mat-column-vettedOn,
+    &.mat-column-salaryMonth,
+    &.mat-column-statusUpdated,
+    &.mat-column-experience{
+      text-align: center;
+    }
+    &.mat-column-role{
+      width: 130px;
+      padding-right: 10px;
+    }
+  }
+}
+//Individual Developer list table
+.individualDev{
+  th{
+    &.mat-column-select {
+      padding-top: 8px;
+    }
+    &.mat-column-name {
+      width: 18%;
+    }
+    &.mat-column-status {
+      width: 18%;
+    }
+    &.mat-column-onboarded,
+    &.mat-column-experience{
+      width: 12%;
+      text-align: center;
+    }
+    &.mat-column-action{
+      width: 3%;
+    }
+  }
+  td{
+    &.mat-column-select {
+      width: 75px;
+    }
+    &.mat-column-name {
+      width: 18%;
+    }
+    &.mat-column-status {
+      width: 18%;
+    }
+    &.mat-column-onboarded,
+    &.mat-column-experience{
+      text-align: center;
+    }
+    &.mat-column-action{
+      width: 3%;
+    }
+  }
+  label.mat-checkbox-layout {
+    position: relative;
+    top: -3px;
+  }
+}
+// individual Developer Job Status
+.individualDevJobStatus{
+  th{
+    &.mat-column-select{
+      width: 50px;
+    }
+    &.mat-column-requirement{
+      width: 15%;
+      padding-right: 10px;
+    }
+    &.mat-column-skills{
+      width: 11%;
+      padding-right: 10px;
+    }
+    &.mat-column-experience,
+    &.mat-column-quotedPrice,
+    &.mat-column-pricePerMonth,
+    &.mat-column-interesredOn,
+    &.mat-column-duration{
+      text-align: center;
+      padding: 0 5px;
+    }
+    &.mat-column-status{
+      width: 17%;
+    }
+  }
+  td{
+    &.mat-column-select{
+      width: 50px;
+    }
+    &.mat-column-requirement{
+      width: 15%;
+      padding-right: 10px;
+    }
+    &.mat-column-skills{
+      width: 11%;
+      padding-right: 10px;
+    }
+    &.mat-column-experience,
+    &.mat-column-quotedPrice,
+    &.mat-column-pricePerMonth,
+    &.mat-column-interesredOn,
+    &.mat-column-duration{
+      text-align: center;
+    }
+    &.mat-column-status{
+      width: 17%;
+    }
+  }
+}
+
+// Job Management list table
+.jobManagementList{
+  .interested {
+    background: rgba(81, 84, 87, 0.08);
+    border: 1px solid $bright-grey;
+    color: $bright-grey;
+    border-radius: 14px;
+    gap: 10px;
+    padding: 5px 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .interview {  // Open To Offers
+    background: rgba(0, 98, 255, 0.08);
+    border: 1px solid $blue-ribbon;
+    color: $blue-ribbon;
+    border-radius: 14px;
+    gap: 10px;
+    padding: 5px 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .hired {
+    background: rgba(1, 188, 106, 0.08);
+    border: 1px solid $lime;
+    color: $lime;
+    border-radius: 14px;
+    gap: 10px;
+    padding: 5px 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .pending {
+    background: rgba(170, 18, 18, 0.08);
+    border: 1px solid $danger;
+    color: $danger;
+    border-radius: 14px;
+    gap: 10px;
+    padding: 5px 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  td{
+    &.mat-column-interested, 
+    &.mat-column-interview, 
+    &.mat-column-hired, 
+    &.mat-column-rejected,
+    &.mat-column-expYears {
+      text-align: center;
+      width: 70px;
+    }
+    &.mat-column-clientPrMonth,
+    &.mat-column-postedOn,
+    &.mat-column-duration {
+      text-align: center;
+      width: 8%;
+    }
+    &.mat-column-req{
+      text-align: center;
+      width: 40px;
+    }
+    &.mat-column-requirement {
+      width: 126px;
+    }
+    &.mat-column-client {
+      max-width: 226px;
+    } 
+    &.mat-column-primarySkills{
+      width: 11%;
+      text-align: left !important;
+      padding-right: 15px !important
+    }
+  }
+  
+  th{
+    &.mat-header-cell {
+      text-align: center !important;
+    }
+    &.mat-header-cell.mat-column-requirement,
+    &.mat-header-cell.mat-column-client,
+    &.mat-column-requirement {
+      width: 12%;
+      text-align: left !important;
+    }
+    &.mat-header-cell.mat-column-primarySkills{
+      width: 11%;
+      text-align: left !important;
+      padding-right: 15px !important
+    }
+  }
+}
+
+// Job Management Developer Status List
+.jobDevList{
+  th{
+    &.mat-column-role{
+      width: 11%;
+    }
+    &.mat-column-primarySkills{
+      width: 11%;
+      text-align: left !important;
+      padding-right: 15px !important
+    }    
+    &.mat-column-interesredOn,
+    &.mat-column-expYears,
+    &.mat-column-quotedPrice,
+    &.mat-column-pricePerMonth,
+    &.mat-column-quotedPrice{
+      text-align: center !important;
+    }
+    &.mat-column-status {
+      width: 17%;
+    }
+    &.mat-column-action{
+      width: 5%;
+    }
+  }
+  td{
+    &.mat-column-role{
+      width: 11%;
+    }
+    &.mat-column-primarySkills{
+      width: 11%;
+      text-align: left !important;
+      padding-right: 15px !important
+    }
+    &.mat-column-interesredOn,
+    &.mat-column-expYears,
+    &.mat-column-pricePerMonth,
+    &.mat-column-quotedPrice,
+    &.mat-column-quotedPrice{
+      text-align: center !important;
+    }
+    &.mat-column-status {
+      width: 17%;
+    }
+    &.mat-column-action{
+      width: 5%;
+    }
+  }
+
+}
+// client list
+.clientList{
+  .hired {
+    background: rgba(1, 188, 106, 0.08);
+    border: 1px solid $lime;
+    color: $lime;
+    border-radius: 14px;
+    gap: 10px;
+    padding: 5px 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .pending {
+    background: rgba(170, 18, 18, 0.08);
+    border: 1px solid $danger;
+    color: $danger;
+    border-radius: 14px;
+    gap: 10px;
+    padding: 5px 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  th{
+    &.mat-column-name{
+      width: 14%;
+    }
+    &.mat-column-source {
+      width: 17%;
+    }
+    &.mat-column-createdAt,
+    &.mat-column-no_of_job_posted,
+    &.mat-column-eng_hired,
+    &.mat-column-pending_req{
+      text-align: center;
+    }
+    &.mat-column-no_of_job_posted {
+      width: 11%;
+    }
+  }
+  td{
+    &.mat-column-name{
+      width: 14%;
+      padding-right: 5px;
+    }
+    &.mat-column-source {
+      width: 17%;
+    }
+    &.mat-column-createdAt,
+    &.mat-column-no_of_job_posted,
+    &.mat-column-eng_hired,
+    &.mat-column-pending_req{
+      text-align: center;
+    }
+    &.mat-column-no_of_job_posted {
+      width: 11%;
+    }
+  }
+}

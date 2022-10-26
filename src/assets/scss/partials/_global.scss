@@ -1,0 +1,536 @@
+ * {
+   box-sizing: border-box;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
+
+ *:before,
+ *:after {
+   box-sizing: border-box;
+ }
+
+ ::-webkit-scrollbar {
+   width: 8px;
+   height: 4px;
+   border: 1px solid #d5d5d5
+ }
+
+ ::-webkit-scrollbar-track {
+   border-radius: 12px;
+   background: #deecff
+ }
+
+ ::-webkit-scrollbar-thumb {
+   border-radius: 18px;
+   background: $harmonies
+ }
+
+ html,
+ body {
+   height: 100%;
+   width: 100%;
+   font-family: $TTNormsPro  !important;
+ }
+
+ .wrapper {
+   margin: 0 auto;
+   width: 100%;
+   padding-right: 20px;
+ }
+
+ app-individual-developers-layout,
+ app-individual-developer-vetted,
+ app-individual-developer-ss-verification,
+ app-individual-developer-details,
+ app-job-management-details,
+ app-job-management-list,
+ app-client-details,
+ app-add-client,
+ app-client-list{
+  width: 100%;
+ }
+ mat-sidenav-container{
+  width: 18%;
+ }
+ .mat-select-trigger{
+  height: 100%;
+ }
+
+ .mat-checkbox-frame {
+  background-color: #949494;
+  transition: border-color 90ms cubic-bezier(0, 0, 0.2, 0.1);
+  border-width: 1px !important;
+  border-style: solid;
+}
+
+ .mat-drawer-container,
+ .mat-stepper-horizontal,
+ .mat-stepper-vertical {
+   background-color: $lighter-grey;
+ }
+
+ .mat-drawer-content {
+   min-height: 100vh;
+ }
+
+ .mat-sidenav-container {
+   &.side-nav {
+     position: fixed;
+     border-right: 1px solid #E2E2E2;
+     // transform: matrix(-1, 0, 0, 1, 0, 0);
+   }
+ }
+
+ .title {
+   font-family: 'TT Norms Pro';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   text-transform: capitalize;
+   color: #000000;
+ }
+
+ // counter
+ .status-counter {
+   margin-bottom: 20px;
+
+   div {
+     font-family: $TTNormsPro;
+     font-style: normal;
+     min-width: 144px;
+     min-height: 100px;
+     display: flex;
+     padding: 8px;
+     border: 1px solid rgba(81, 84, 87, 0.08);
+     border-radius: 6px;
+     flex-direction: column;
+     justify-content: space-between;
+
+     p {
+       font-weight: 500;
+       line-height: 17px;
+       text-transform: capitalize;
+     }
+
+     span {
+       font-weight: 500;
+       font-size: 36px;
+       line-height: 43px;
+       display: flex;
+     }
+   }
+ }
+.client-profile{
+  img{
+      @include size( 100px, 100px);
+      object-fit: cover;
+  }
+}
+
+ .btn-invite {
+   align-items: center;
+   padding: 2px 32px !important;
+   gap: 6px;
+   background: #0062FF;
+   border-radius: 4px;
+   color: $white;
+   &.export{
+    padding: 2px 18px !important;
+   }
+ }
+ 
+ .btn-reject {
+  align-items: center;
+  padding: 2px 32px !important;
+  gap: 6px;
+  border: 1px solid #0062FF !important;
+  border-radius: 4px;
+  color: #0062FF;
+}
+
+ .btn-cancel {
+   align-items: center;
+   padding: 2px 32px !important;
+   gap: 6px;
+   border: solid 1px #0062FF !important;
+   border-radius: 4px;
+   color: #0062FF;
+ }
+
+ .vert {
+   min-width: 40px !important;
+   background: #0062FF;
+   border-radius: 4px;
+   padding: 0 8px !important;
+   color: $white;
+ }
+
+ .btn-filter {
+   border: 1px solid #C7D4EA !important;
+   border-radius: 6px !important;
+   padding: 0 12px !important;
+ }
+
+ // search 
+ .search {
+   width: 100%;
+
+   .mat-form-field-appearance-outline .mat-form-field-outline-end {
+     @include border-radius(6px);
+     background: $white;
+     border: 1px solid $tints-blue;
+   }
+
+   .mat-form-field-appearance-outline .mat-form-field-outline-start {
+     display: none;
+   }
+
+   .mat-form-field-appearance-outline .mat-form-field-wrapper {
+     margin: 0;
+     background: #fff;
+     padding: 4px;
+     @include border-radius(4px);
+   }
+
+   .inner-search {
+     width: 17.57rem;
+
+     .sub-field {
+       width: 100%;
+
+       .mat-button {
+         min-width: 0px;
+         padding: 0px;
+       }
+
+       .mat-form-field ng-touched {
+         border-radius: 6px;
+         background-color: red;
+       }
+     }
+
+     .mat-form-field-flex {
+       height: 40px;    
+       display: flex;
+       align-items: center;
+     }
+
+     .mat-form-field-appearance-outline .mat-form-field-infix {
+       padding: 6px 0 0 10px;
+       padding-bottom: 10px;
+       font-size: $font-size-xs;
+       line-height: 15px;
+     }
+   }
+ }
+
+ .dialog-search {
+   width: 100%;
+
+   .mat-form-field-appearance-outline .mat-form-field-outline-end {
+     @include border-radius(6px);
+     background: $white;
+     border: 1px solid $tints-blue;
+   }
+
+   .mat-form-field-appearance-outline .mat-form-field-outline-start {
+     display: none;
+   }
+
+   .mat-form-field-appearance-outline .mat-form-field-wrapper {
+     margin: 0;
+     background: #fff;
+     @include border-radius(4px);
+   }
+
+   .inner-search {
+     .sub-field {
+       width: 100%;
+
+       .mat-button {
+         min-width: 0px;
+         padding: 0px;
+         background: transparent;
+       }
+
+       .mat-form-field ng-touched {
+         border-radius: 6px;
+         background-color: red;
+       }
+     }
+
+     .mat-form-field-flex {
+       height: 48px;
+       display: flex;
+       align-items: center;
+     }
+
+     .mat-form-field-appearance-outline .mat-form-field-infix {
+       padding: 6px 0 0 10px;
+       padding-bottom: 14px;
+       font-size: $fs-14;
+       line-height: 15px;
+     }
+   }
+ }
+
+ .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,
+ .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon {
+   display: block;
+   position: relative;
+ }
+
+ .mat-card:not([class*=mat-elevation-z]) {
+   box-shadow: none;
+ }
+  .mat-error {
+    font-size: 12px;
+    font-weight: 500;
+  }
+ .mat-elevation-z8 {
+   box-shadow: none;
+ }
+
+ .mat-card {
+   padding: 0px !important;
+   font-family: $TTNormsPro;
+ }
+
+ .mat-raised-button:not([class*=mat-elevation-z]) {
+   box-shadow: none;
+ }
+
+ .breadcrumb {
+   margin: 1rem 0;
+   overflow: hidden;
+   white-space: nowrap;
+   font-weight: 500;
+
+   ol {
+     color: $harmonies;
+     display: flex;
+     align-items: stretch;
+     margin: 0;
+     padding-left: 0;
+     list-style: none;
+
+     li {
+       margin-right: 1px;
+       font-size: 14px;
+
+       .mat-icon {
+         font-size: 14px;
+         margin-left: 14px;
+       }
+
+       & * {
+         display: block;
+         line-height: 18px;
+       }
+     }
+   }
+ }
+
+ .filter {
+   padding: 20px;
+   height: auto;
+   width: 346px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   .mat-filter {
+     position: absolute;
+     right: 20px;
+     bottom: 20px;
+   }
+ }
+
+ .mat-column-image {
+   img {
+     margin-top: 8px;
+
+     &.client-img {
+       @include size (25px, 25px);
+       object-fit: cover;
+     }
+   }
+ }
+
+ .mat-drawer.mat-drawer-end {
+  position: fixed;
+  right: 0;
+  transform: translate3d(100%, 0, 0);
+}
+
+
+ .breadcrumb li>* {
+   display: block;
+   line-height: 1;
+ }
+
+ .breadcrumb li:last-child {
+   overflow: hidden;
+ }
+
+ .poc-detail {
+   background: #FAFAFA;
+   border: 1px solid $light-grey;
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   a {
+     font-family: 'TT Norms Pro';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     color: #006DF9;
+     padding: 26px 0;
+     cursor: pointer;
+   }
+ }
+
+ .breadcrumb [aria-current="page"] {
+   color: #222;
+   font-weight: 700;
+   text-decoration: none;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+
+ .form-card {
+   padding: 50px 167px !important;
+   border: 1px solid #E2E2E2;
+   border-radius: 10px !important;
+ }
+
+ .mat-form-bg {
+   background: #F8F9FC;
+   padding: 30px;
+   border-radius: 12px;
+ }
+
+ .mat-form-field {
+   font-family: $TTNormsPro;
+   font-weight: $medium;
+ }
+
+ .resource-skill{
+  p{
+    img{
+      position: relative;
+      top: 4px;
+      &.linkedin{
+        position: relative;
+        top: 8px;
+      }
+    }
+    span{
+      img{
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+ }
+ .stepper{
+   .mat-stepper-horizontal, .mat-stepper-vertical, .mat-step-header:hover:not([aria-disabled]) {
+     background-color: transparent;
+  }
+  .mat-horizontal-content-container {
+    overflow: hidden;
+    padding: 0;
+  }
+  .mat-horizontal-stepper-header{
+    padding: 0 18px !important;
+  }
+  .mat-stepper-horizontal-line {
+    border-top: dashed 1px #0062FF !important;
+  }
+  .mat-step-text-label{
+    font-family: 'TT Norms Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #000000;
+
+  }
+  .mat-step-header {
+    .mat-step-icon {
+      background-color: $blue-ribbon;
+      color: $white;
+      padding: 15px;
+      &.mat-step-icon-selected{
+        background-color: $lime;
+        color: $white;
+        padding: 15px;
+      }
+    }
+  }
+ }
+
+ .icon-circle{
+   padding: 14px;
+   display: flex;
+ }
+  .mat-progress-bar {
+  height: 10px !important;
+    border-radius: 10px !important;
+  }
+  div.mat-progress-bar-primary.mat-progress-bar-fill.mat-progress-bar-element::after{
+    background-color: $blue-ribbon;
+}
+//  Profile list
+.profile-list{
+  .mat-list-base .mat-list-item{
+    border-radius: 12px;
+    background: $white;
+    margin-bottom: 10px;
+    color: $white !important;
+    cursor: pointer;
+    img{
+      margin-right: 10px;
+    }
+    &:hover{
+      background: $blue-ribbon;
+      .mat-list-item-content{
+        color: $white;
+        img{
+          filter: invert(1);
+        }
+      }
+    }
+    &.active{
+      background: $blue-ribbon;
+      .mat-list-item-content{
+        color: $white;
+        img{
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}
+.mat-datepicker-toggle-default-icon {
+  position: relative;
+  top: 7px;
+}
+.mat-drawer{
+  &.filter {
+    .mat-drawer-inner-container {
+      width: 100%;
+      height: calc(100vh - 100px);
+      overflow: auto;
+    }
+  }
+}
+.default-profile{
+  img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

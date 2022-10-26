@@ -1,0 +1,92 @@
+.cdk-overlay-dark-backdrop {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+.cdk-global-overlay-wrapper {
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    align-items: flex-start !important;
+    top: 10%;
+}
+.mat-dialog-container{
+    box-shadow: none !important;
+    border-radius: 10px !important;
+    background: $white !important;
+    padding: 30px !important;
+}
+.mat-dialog-title{
+    display: flex !important;
+    align-items: center;
+    font-family: $TTNormsPro;
+    mat-icon{
+        height: unset !important;
+    }
+}
+textarea {
+    resize: none !important;
+}
+.cdk-global-scrollblock {
+    overflow: hidden;
+    position: absolute;
+    top: 0 !important;
+}
+.country-selector{
+    opacity: unset !important;
+    position: absolute;
+    top: -6px !important;
+    left: -18px !important;
+    &.mat-button .mat-button-wrapper {
+        position: relative !important;
+        left: -4px !important;
+    }
+    &.mat-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay, .mat-stroked-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay {
+        opacity: 0.1 !important;
+        background: #F1F6FA !important;
+    }
+}
+.country-selector-flag {
+    display: inline-block;
+    margin-right: .5ex;
+    border-radius: 50%;
+}
+.ngx-mat-tel-input-container{
+    font-family: 'TT Norms Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px !important;
+    line-height: 18px;
+    input:not(.country-search) {
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        padding: 0 6px 0 75px !important;
+    }
+}
+.dscroll{
+    min-height: 42px;
+    max-height: 135px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    &.dscroll::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        border: 1px solid #d5d5d5
+      }
+     
+      &.dscroll::-webkit-scrollbar-track {
+        border-radius: 12px;
+        background: #deecff
+      }
+     
+      &.dscroll::-webkit-scrollbar-thumb {
+        border-radius: 18px;
+        background: $blue-ribbon
+      }
+}
+.invite-input{
+    .mat-form-field-wrapper{
+        padding-bottom: 0px !important;
+    }
+}
